@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>batman</title>
+  </head>
+  <body>
+    <style type="text/css">
+      body{
+        background: linear-gradient(to right, #cac531, #f3f9a7);
+      }
+      img{
+
+        transform: translate(50%, 50%);
+        position: relative;
+        animation-name: batman;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+
+      }
+      @keyframes batman {
+        0%{
+          filter: drop-shadow(0 0 0 var(--cor-batman));
+         
+        }
+        50%{
+          filter: drop-shadow(10px 10px 45px var(--cor-batman));
+           transform:translate(20%, 50%) rotate(-45deg);
+        }
+        100%{
+          filter: drop-shadow(22px 22px 110px var(--cor-batman));
+          transform:translate(95%, 50%) rotate(45deg);
+        }
+        
+      }
+      .batman-logo{
+        --cor-batman: red;
+      }
+ 
+
+    </style>
+    <img src="batman-2330021_640.png" class="batman-logo" alt="batman">
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Olá, mundo!</title>
+  </head>
+  <body>
+    <style type="text/css">
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 24px;
+        background: 
+        linear-gradient(
+          to top right,
+          blueviolet,
+          darkmagenta
+        );
+      }
+
+      .btn{
+        position: relative;
+        padding: 2rem 4rem;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        background-color: tomato;
+        transition: 0.3s;
+      }
+      .btn::before{
+        content: "";
+        position: absolute;
+        bottom: -1rem;
+        height: 1rem;
+        width: 101%;
+        left: 0.5rem;
+        background-color:red ;
+        transform: skewX(45deg);
+        transition: 0.3s;
+      }
+      .btn::after{
+        content: "";
+        position: absolute;
+        right: -1rem;
+        width: 1rem;
+        height: 100%;
+        bottom: -0.5rem;
+        background-color: darkred;
+        transform: skewY(45deg);
+        transition: 0.3s;
+      }
+      .btn:active{
+        margin: 0.75rem 0rem 0rem 0.75rem;
+      }
+      .btn:active::before{
+        height: 0.5rem;
+        bottom: -0.5rem;
+        left: 0.25rem;
+      } 
+      .btn:active::after{
+        right: -0.5rem;
+        width: 0.5rem;
+        bottom: -0.25rem;
+
+      }
+
+    
+
+    </style>
+    <a href="" class="btn">Saiba Mais</a>
+  </body>
+</html>

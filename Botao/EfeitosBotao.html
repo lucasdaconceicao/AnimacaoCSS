@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <style type="text/css">
+      @keyframes bounce {
+        0%,20%,60%,100%{
+          transform: translateY(0);
+        }
+        40%{
+          transform: translateY(-20px);
+        }
+        80%{
+          transform: translateY(-10px);
+        }
+        
+      }
+      .btns{
+        text-align: center;
+        margin-top: 50px;
+      }
+      .efeito{
+        border: none;
+        color: #fff;
+        padding: 28px;
+        margin: 10px;
+        font-size: 24px;
+        line-height: 24px;
+        border-radius: 18px;
+        position: relative;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: 400ms ease;
+      }
+      .efeito-1{
+        background-color: #28348A;
+      }
+      .efeito-1::before{
+        content:"";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 81px;
+        background: rgba(255, 255, 255, 0.3);
+        transition: 1s ease;
+        border-radius: 18px;
+      }
+      .efeito-1:hover::before{
+        width: 100%;
+      }
+      .efeito-2{
+        background-color: #772150;
+      }
+      .efeito-2::before{
+        content:"";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 0px;
+        background: rgba(255, 255, 255, 0.3);
+        transition: 1s ease;
+        border-radius: 18px;
+      }
+      .efeito-2:hover::before{
+        height: 81px;
+      }
+      .efeito-3{
+        background: #009c3d;
+      }
+      .efeito-3:hover{
+        background: rgba(0,0,0,0);
+        color:#009c3d;
+        box-shadow: inset 0 0 0 3px #009c3d;
+      }
+      .efeito-4{
+        background: #f18f01;
+      }
+      .efeito-4:hover{
+        animation-name: bounce;
+        animation-duration: 1s;
+      }
+      .efeito-5{
+        background: #db3a34;
+      }
+      .efeito-5:hover{
+        transform: skew(-10deg);
+      }
+      .efeito-6{
+        background: #376693;
+        transform-style: preserve-3d;
+      }
+      .efeito-6::after{
+        top: -100%;
+        left: 0px;
+        width: 100%;
+        padding: 28px;
+        position: absolute;
+        background: #3a9999;
+        border-radius: 18px;
+        content: 'Mudou!';
+        transform-origin: left bottom;
+        transform: rotateX(90deg);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .efeito-6:hover{
+        transform-origin: center bottom;
+        transform:rotateX(-90deg) translateY(100%);
+      }
+    </style>
+    
+    <div class="btns">
+      <button type="button" class="efeito efeito-1">efeito 1</button>
+      <button type="button" class="efeito efeito-2">efeito 2</button>
+      <button type="button" class="efeito efeito-3">efeito 3</button>
+      <button type="button" class="efeito efeito-4">efeito 4</button>
+      <button type="button" class="efeito efeito-5">efeito 5</button>
+      <button type="button" class="efeito efeito-6">efeito 6</button>
+    </div>
+
+  </body>
+</html>
